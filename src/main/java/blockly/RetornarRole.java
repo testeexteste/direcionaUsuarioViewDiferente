@@ -27,7 +27,7 @@ public static Var Executar() throws Exception {
     if (Var.valueOf(grupoLogin.equals(Var.valueOf("Administrators"))).getObjectAsBoolean()) {
         cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/admin/user"), cronapi.list.Operations.newList(Var.valueOf("param0",Var.VAR_NULL)));
     } else {
-        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/error/403"), cronapi.list.Operations.newList(Var.valueOf("param0",Var.VAR_NULL)));
+        cronapi.util.Operations.callClientFunction(Var.valueOf("cronapi.screen.changeView"), Var.valueOf("#/home/logged/loester"), cronapi.list.Operations.newList(Var.valueOf("param0",Var.VAR_NULL)));
     }
     return Var.VAR_NULL;
    }
